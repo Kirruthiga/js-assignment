@@ -1,0 +1,10 @@
+var today = new Date();
+var day = today.getDay();
+var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+document.write("<h1>Today is : " + daylist[day] + ".</h1>");
+var hour = today.getHours();
+var minute = today.getMinutes();
+var second = today.getSeconds();
+var prepend = (hour >= 12) ? "PM" : "AM";
+hour = (hour >= 12) ? hour - 12 : hour;
+document.write("<h2>Current Time is : " + hour + " " + prepend + " : " + minute + " : " + second + "</h2>");
